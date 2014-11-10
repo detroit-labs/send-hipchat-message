@@ -35,3 +35,9 @@ Example:
 ```bash
 ruby send_message_to_room.rb 12345_roomname@conf.hipchat.com "Get up and stretch."
 ```
+
+We use `crontab` to schedule reminders to get up!
+
+The crontab instruction for that is as follows:
+
+<insert the crontab instruction here>
