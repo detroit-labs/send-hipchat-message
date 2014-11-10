@@ -17,6 +17,14 @@ You must create your own `.env` file and store it in the root of this repository
 
 The format for the `.env` file should be as follows:
 
+```
+HUBOT_BADGER_KEY=<your key>
+HUBOT_REMIND_URL=<your hubot remind endpoint>
+```
+
+For mor eon the `HUBOT_REMIND_URL`, see [this repository](github.com/detroit-labs/hubot-badger).
+
+
 Use the script `send_message_to_room.rb` to send a message to any room. This script requires 2 command line arugments:
 
 - 1st argument is the room XXMP JID (which can be found on the HipChat web client)
