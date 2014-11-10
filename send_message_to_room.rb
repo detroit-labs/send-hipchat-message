@@ -31,7 +31,7 @@ puts 'Sending message to room...'
 payload = {:room => room_jid, :message => message}
 json_string = payload.to_json.to_s
 
-digest = OpenSSL::Digest::Digest.new("md5")
+digest = OpenSSL::Digest.new("md5")
 hash = OpenSSL::HMAC.hexdigest(digest, ENV['HUBOT_BADGER_KEY'], json_string)
 
 headers = {"Content-Type" => "application/json", "X-BADGER-HMAC-MD5" => hash}
