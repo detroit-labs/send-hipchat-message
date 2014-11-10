@@ -13,6 +13,8 @@ Usage
 
 This uses [Ruby Gems](https://rubygems.org/), along with [Bundler](http://bundler.io/) for dependency management. See the websites for isntallation instructions.
 
+Remember to run `bundle install`.
+
 You must create your own `.env` file and store it in the root of this repository in order for the script(s) to work as expected. The script(s) use [dotenv](https://github.com/bkeepers/dotenv) to load the environment variables. The `.env` file is *not*, and should not be in source control.
 
 The format for the `.env` file should be as follows:
