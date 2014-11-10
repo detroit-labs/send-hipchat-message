@@ -3,8 +3,6 @@ Send HipChat Messages via Ruby Script
 
 Use this repository if you wish to send HipChat messages to any given room via a Ruby script.
 
-===
-
 Description
 ---
 
