@@ -13,6 +13,10 @@ Usage
 
 This uses [Ruby Gems](https://rubygems.org/), along with [Bundler](http://bundler.io/) for dependency management. See the websites for isntallation instructions.
 
+You must create your own `.env` file and store it in the root of this repository in order for the script(s) to work as expected. The script(s) use [dotenv](https://github.com/bkeepers/dotenv) to load the environment variables. The `.env` file is *not*, and should not be in source control.
+
+The format for the `.env` file should be as follows:
+
 Use the script `send_message_to_room.rb` to send a message to any room. This script requires 2 command line arugments:
 
 - 1st argument is the room XXMP JID (which can be found on the HipChat web client)
