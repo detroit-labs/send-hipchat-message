@@ -42,7 +42,7 @@ Example:
 ruby send_message_to_room.rb 12345_roomname@conf.hipchat.com "Get up and stretch."
 ```
 
-We use `crontab` to schedule reminders to send the get up notiication. We made a script to call the Ruby script to send the message. We didn't commit this, because it contains sensitive information, such as the room `XMPP JID`.
+We use `crontab` to schedule reminders to send the get up notification. We made a script to call the Ruby script to send the message. We didn't commit this, because it contains sensitive information, such as the room `XMPP JID`.
 
 **GOTCHYA**: Since this Ruby script has dependencies, they need to be installed in the environment in which cron runs. To do this, use the command `rvm cron setup` to setup the `rvm` environment inside the cron environment.
 
