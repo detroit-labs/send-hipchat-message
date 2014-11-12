@@ -32,6 +32,10 @@ Use the script `send_message_to_room.rb` to send a message to any room. This scr
 - 1st argument is the room XXMP JID (which can be found on the HipChat web client; see image below)
 - 2nd argument is the message text
 
+<p align="center" >
+  <img src="https://raw.githubusercontent.com/detroit-labs/send-hipchat-message/master/assets/xmpp_jid_location.png" title="xmpp_jid_location">
+</p>
+
 Example:
 
 ```bash
