@@ -6,7 +6,7 @@ Use this repository if you wish to send HipChat messages to any given room via a
 Description
 ---
 
-This is used to send the "Get Up!" notifications every 15 minutes. We use this to remind us to stand up, stretch out, and maybe walk around, every 15 minutes throughout the work day.
+This is used to send "Get Up!" notifications every 15 minutes. We use this to remind us to stand up, stretch out, and maybe walk around, every 15 minutes throughout the work day.
 
 Usage
 ---
