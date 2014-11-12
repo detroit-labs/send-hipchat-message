@@ -42,8 +42,16 @@ Example:
 ruby send_message_to_room.rb 12345_roomname@conf.hipchat.com "Get up and stretch."
 ```
 
-We use `crontab` to schedule reminders to get up!
+We use `crontab` to schedule reminders to send the get up notiication. We made a script to call the Ruby script to send the message. We didn't commit this, because it contains sensitive information, such as the room `XMPP JID`.
+
+**GOTCHYA**: Since this Ruby script has dependencies, they need to be installed in the environment in which cron runs. To do this, use the command `rvm cron setup` to setup the `rvm` environment inside the cron environment.
 
 The crontab instruction for that is as follows:
 
-<insert the crontab instruction here>
+```bash
+15,30,45,59 15-16,18-21 * * 1-5 sh /path/to/repo/send_get_up_message.sh 
+```
+
+This calls `send_get_up_message.sh` on the 15, 30, 45, and 59 minute mark of every hour from 15:00-21:00 (UTC time), excluding from 17:00-18:00 (lunch), Monday-Friday. For more information about cronjobs, check out [this](http://www.thegeekstuff.com/2009/06/15-practical-crontab-examples/).
+
+
