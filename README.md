@@ -24,7 +24,7 @@ HUBOT_BADGER_KEY=<your key>
 HUBOT_REMIND_URL=<your hubot remind endpoint>
 ```
 
-For mor eon the `HUBOT_REMIND_URL`, see [this repository](github.com/detroit-labs/hubot-badger).
+For more on the `HUBOT_REMIND_URL`, see [this repository](github.com/detroit-labs/hubot-badger).
 
 
 Use the script `send_message_to_room.rb` to send a message to any room. This script requires 2 command line arugments:
