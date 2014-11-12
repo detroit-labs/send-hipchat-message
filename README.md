@@ -46,7 +46,7 @@ We use `crontab` to schedule reminders to send the get up notification. We made 
 
 **GOTCHYA**: Since this Ruby script has dependencies, they need to be installed in the environment in which cron runs. To do this, use the command `rvm cron setup` to setup the `rvm` environment inside the cron environment.
 
-The crontab instruction for that is as follows:
+The crontab instruction is this:
 
 ```bash
 15,30,45,59 15-16,18-21 * * 1-5 sh /path/to/repo/send_get_up_message.sh 
